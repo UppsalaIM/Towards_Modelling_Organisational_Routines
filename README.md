@@ -5,7 +5,7 @@ Source code and data for the paper "Towards Modelling and Simulation of Organisa
 
 Python requirements can be found in `requirements.txt`. 
 
-To run the data extraction, you will need a [GitHub access token]([https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens]). 
+To run the data extraction, you will need a [GitHub access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). 
 
 ## Usage
 
