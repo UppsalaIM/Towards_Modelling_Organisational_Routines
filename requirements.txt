@@ -1,0 +1,7 @@
+PyGithub
+pandas
+matplotlib
+networkx
+jupyter
+notebook
+plantuml

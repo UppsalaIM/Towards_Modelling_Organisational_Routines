@@ -1,0 +1,57 @@
+@startuml
+
+class Routine {
+  +Ostensive ostensive
+  +Performative performative
+  +isLive()
+  +isGenerative()
+}
+
+class Ostensive {
+}
+
+class Performative {
+  +performances: Performance[]
+}
+
+class ActionPattern {
+  +actions: Action[]
+}
+
+class Performance {
+  +performedActions: PerformedAction[]
+}
+
+class Action {
+  +String name
+  +Actor actor
+}
+
+class PerformedAction {
+  +DateTime performedAt
+}
+
+class Actor {
+  +String name
+  +isIntermediary()
+  +isMediator()
+}
+
+
+class HumanActor {}
+
+class DigitalActor {}
+
+Routine *-l- Ostensive
+Routine *-r- Performative
+ActionPattern *-- Action
+Ostensive --|> ActionPattern
+Performative --|> ActionPattern
+Performative *-- Performance
+Performance *-- PerformedAction
+PerformedAction -l|> Action
+Action -l- Actor
+HumanActor -u-|> Actor
+DigitalActor -u-|> Actor
+
+@enduml
